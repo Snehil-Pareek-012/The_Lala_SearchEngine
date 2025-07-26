@@ -1,0 +1,80 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: relative;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8); /* Soft white overlay */
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+.search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+input:focus {
+  background-color: #e8e8e8;
+}
+
+button {
+  padding: 14px 24px;
+  font-size: 18px;
+  background-color: #0f9b8e;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b7c73;
+}
+
