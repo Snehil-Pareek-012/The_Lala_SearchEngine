@@ -6,7 +6,7 @@ import java.net.*;
 import java.util.*;
 
 public class Main {
-    static final String API_KEY = "AIzaSyA39CqY8KEZbcYSjZtaYgKByXn7Emxy88o";
+    //static final String API_KEY = "AIzaSyA39CqY8KEZbcYSjZtaYgKByXn7Emxy88o";
     static final String SEARCH_ENGINE_ID = "b5051e476f0be4950";
 
     public static void main(String[] args) throws Exception {
